@@ -8,10 +8,10 @@ import Footer from '../Headerfooter/Footer';
 const PayType = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { ogprice } = location.state || {};
+  const { orgPrice } = location.state || {};
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate('/varify',{ state: { ogprice } });
+    navigate('/varify',{ state: { orgPrice } });
 };
   return (
     <>

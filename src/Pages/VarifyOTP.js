@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 const VarifyOTP = () => { 
   const [offer,setoffer]=useState("");
   const location = useLocation();
-  const { ogprice } = location.state || {};
+  const { orgPrice } = location.state || {};
   const [formData, setFormData] = useState({
     name: '',
     cardNumber: '',
@@ -131,7 +131,7 @@ console.log(apiPayload);
   //         expiryDate: `${formData.expiryMonth}/${formData.expiryYear}`,
   //         cvvNumber: formData.cvv,
   //         cardType: formData.cardType,
-  //         price: ogprice.price
+  //         price: orgPrice.price
   //       };
   //     navigate('/cardinfo'  ,{ state: { payload } });
   //   }
@@ -147,7 +147,7 @@ console.log(apiPayload);
         <h5 >Paying to Total Amount</h5>
       </div>
       <div className='col-3'>
-        <h5 >AMZN ₹ {ogprice.price}</h5>
+        <h5 >AMZN ₹ {orgPrice.price}</h5>
       </div>
       </div>
       {/* Price show */}

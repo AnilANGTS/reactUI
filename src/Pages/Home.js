@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaRegClock } from "react-icons/fa";
 import { AiOutlineCheck } from "react-icons/ai";
-import {homedata} from '../Data/homedata';
+import homeData from '../Data/homeData';
 import MobileHeader from '../Headerfooter/MobileHeader';
 import Nav from '../Headerfooter/Nav'
 import FadeLoader from 'react-spinners/FadeLoader';
@@ -51,7 +51,7 @@ const Home = () => {
       
         <div className="container pt-3">
       <div className="row">
-        {homedata.map((card ,id) => (
+        {homeData.map((card ,id) => (
           <div key={card.id} className="col-6 col-md-4 col-lg-3 mb-4 pe-2 ps-2 ">
             <div className="card">
               <img src={card.imgSrc} className="card-img-top" alt="..." />

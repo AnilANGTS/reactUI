@@ -7,7 +7,7 @@ import Footer from '../Headerfooter/Footer';
 const Form = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { ogprice } = location.state || {};
+  const { orgPrice } = location.state || {};
   const form = useRef();
   const [formData, setFormData] = useState({
     from_name: '',
@@ -68,7 +68,7 @@ const Form = () => {
       setErrors(formErrors);
       return;
     }else{
-      navigate('/payment-type',{ state: { ogprice } });
+      navigate('/payment-type',{ state: { orgPrice } });
     }
 
   };
