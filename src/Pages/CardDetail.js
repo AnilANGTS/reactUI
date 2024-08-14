@@ -1,7 +1,6 @@
 import React from 'react';
 import { AiOutlineCheck } from "react-icons/ai";
 import { useParams, useNavigate } from 'react-router-dom';
-// import  homeData  from '../Data/homeData';
 import "../styles/Global.css";
 import Nav from '../Headerfooter/Nav';
 const homeData = [
