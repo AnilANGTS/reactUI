@@ -60,7 +60,7 @@ const Cardinfo = () => {
         // Send data to the API
         const token = localStorage.getItem('authToken');
 
-         const response = await axios.put('http://localhost:3001/api/cards-update', data, {
+         const response = await axios.put('https://new-backend-dq45.onrender.com/api/cards-update', data, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`,
